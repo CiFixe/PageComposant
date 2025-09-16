@@ -53,8 +53,6 @@ main {
 /* === Sidebar (à gauche) === */
 aside {
     width: 200px;
-    background-color: #f4f4f4;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -65,9 +63,10 @@ aside a {
     padding: 10px;
     text-decoration: none;
     color: #000;
-    background-color: #ddd;
+    background-color: #e7ecef;
     text-align: center;
     transition: background 0.3s;
+    border-radius: 5px;
     font-weight: bold;
 }
 
@@ -93,6 +92,10 @@ article {
 
 article li {
     font-size: 2em;
+}
+
+article image {
+    align-self: center;
 }
 
 /* === Contenu dynamique avec :target === */
@@ -127,4 +130,8 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.gpu{
+    background: linear-gradient(to bottom, #274c77, #6096ba, #a3cef1);
 }
