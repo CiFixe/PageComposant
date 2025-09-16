@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"> <!-- Encodage des caractères -->
-    <title>ComposantsPc</title> <!-- Titre de la page -->
-    <link href="styles.css" rel="stylesheet" type="text/css" media="screen"/> <!-- Lien vers la feuille de style -->
+    <meta charset="utf-8">
+    <title>ComposantsPc</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" media="screen"/>
 </head>
 
 <body>
     <header>
         <div>
-            <!-- Image de profil -->
-            <img src="../Assets/Images/Profile.png" alt="Profile" class="Image" width="100" height="100"> <!-- .png 85x82 11,7 Ko-->
-            <h1>Mathieu DIXNEUF</h1> <!-- Nom principal -->
-            <h2>1Gen2</h2> <!-- Classe ou promotion -->
+            <img src="../Assets/Images/Profile.png" alt="Profile" class="Image" width="100" height="100">
+            <h1>Mathieu DIXNEUF</h1>
+            <h2>1Gen2</h2>
         </div>
     </header>
 
     <main>
         <aside>
-            <button>
-                <p>Text</p>
-                <h1>Text</h1>
-                <h2>text</h2>
-            </button>
+            <a href="#cpu">Processeur</a>
+            <a href="#gpu">Carte Graphique</a>
         </aside>
 
         <article>
-            <!-- Liste des sections du CV -->
+            <section id="default" class="content visible">
+                <h2>Bienvenue !</h2>
+                <p>Choisissez un composant dans la barre latérale pour en savoir plus.</p>
+            </section>
+
+            <section id="cpu" class="content">
+                <h2>Processeur</h2>
+                <p>Le processeur est le cerveau de l'ordinateur. Il exécute les instructions des programmes.</p>
+            </section>
+
+            <section id="gpu" class="content">
+                <h2>Carte Graphique</h2>
+                <p>La carte graphique est responsable du rendu des images, vidéos et jeux.</p>
+            </section>
+
+            <section id="ram" class="content">
+                <h2>Mémoire RAM</h2>
+                <p>La RAM stocke temporairement les données utilisées par le système et les applications.</p>
+            </section>
+
+            <section id="stockage" class="content">
+                <h2>Stockage</h2>
+                <p>Le stockage (HDD/SSD) conserve les fichiers et le système d'exploitation.</p>
+            </section>
         </article>
     </main>
 
     <footer>
         <p>Contacts</p>
         <div class="contacts">
-            <!-- Lien vers le profil GitHub -->
             <a href="https://github.com/CiFixe" target="_blank" class="contactlink">
-                <img src="../Assets/Images/GithubLogo.png" width="30px" height="30px"> <!-- .png 230x225 4,72 Ko-->
+                <img src="../Assets/Images/GithubLogo.png" width="30px" height="30px">
             </a>
-            <!-- Adresse email -->
             <p>📧: dixneuf.math19@gmail.com</p>
         </div>
     </footer>
 </body>
+</html>
