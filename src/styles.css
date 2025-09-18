@@ -1,5 +1,6 @@
-/* === Reset général === */
-body {
+/* Fichier Style de la page */
+
+body { /* Body */
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,8 +10,9 @@ body {
     flex-direction: column;
 }
 
-/* === Header === */
-header {
+/* Haut de la page*/
+
+header { /* Header */
     background-color: #274c77;
     color: #ffffff;
     padding: 0.8em 20px;
@@ -20,27 +22,22 @@ header {
     box-shadow: 0 4px 20px #346194;
 }
 
-header h1 {
+header h1 { /* Hader h1 */
     font-size: 3em;
     font-weight: normal;
     margin: 0;
 }
 
-header h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0 0 2.5em 0;
-    color: #cecece;
-}
-
-header img {
+header img {/* Hader img */
     float: left;
     margin-right: 3em;
     display: flex;
 }
 
-/* === Main layout === */
-main {
+/* Milieu de la page*/
+
+
+main { /* main */
     flex: 1;
     display: flex;
     width: 100%;
@@ -48,15 +45,18 @@ main {
     box-sizing: border-box;
 }
 
-/* === Sidebar (à gauche) === */
-aside {
+
+/* Aside */
+
+
+aside { /* aside */
     width: 200px;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-aside a {
+aside a { /* Aside a*/
     margin: 5px 0;
     padding: 10px;
     text-decoration: none;
@@ -69,31 +69,28 @@ aside a {
 }
 
 
-/* === Footer === */
-footer {
-    flex-shrink: 0;
-    padding: 10px 20px;
+/* Contenu */
+
+/* les contenu sont les différents partie avec les quelles les bouttons 
+peuvent intéragir */
+
+#cpu:target { /* page cpu */
+    display: block;
     color: #ffffff;
-    background-color: #274c77;
-    text-align: center;
-    box-shadow: 0 4px 20px #346194;
+    background: linear-gradient(to bottom, #333333, #76B900);
 }
 
-.contacts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+#gpu:target {/* page gpu */
+    display: block;
+    color: #E6E6E6;
+    background: linear-gradient(to bottom, #005591, #0071C5);
 }
 
-.gpu{
-    background: linear-gradient(to bottom, #274c77, #6096ba, #a3cef1);
-    
+#default:target {/* page defaut */
+    display: block;
 }
 
-
-
-.content {
+.content {/* Contenu */
     display: none;
     flex: 1;
     color: #0d1927;
@@ -109,20 +106,13 @@ footer {
 }
 
 
+/* Bas de la page */
 
-/* Afficher uniquement la section ciblée */
-#cpu:target {
-    display: block;
+footer {/* footer */
+    flex-shrink: 0;
+    padding: 10px 20px;
     color: #ffffff;
-    background: linear-gradient(to bottom, #333333, #76B900);
-}
-
-#gpu:target {
-    display: block;
-    color: #E6E6E6;
-    background: linear-gradient(to bottom, #005591, #0071C5);
-}
-
-#default:target {
-    display: block;
+    background-color: #274c77;
+    text-align: center;
+    box-shadow: 0 4px 20px #346194;
 }
