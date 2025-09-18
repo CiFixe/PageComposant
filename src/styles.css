@@ -36,8 +36,6 @@ header h2 {
 header img {
     float: left;
     margin-right: 3em;
-    border-radius: 50%;
-    border: 5px solid #ffffff;
     display: flex;
 }
 
@@ -70,50 +68,6 @@ aside a {
     font-weight: bold;
 }
 
-aside a:hover {
-    background-color: #ccc;
-}
-
-/* === Article (contenu principal) === */
-article {
-    flex: 1;
-    background-color: #e7ecef;
-    color: #0d1927;
-    font-family: Arial, sans-serif;
-    padding: 4em 3em;
-    border-radius: 16px;
-    box-shadow: 0 4px 16px #e7ecef;
-    max-width: 50em;
-    box-sizing: border-box;
-    text-align: left;
-    margin-right: auto;
-    margin-left: 2em;
-}
-
-article li {
-    font-size: 2em;
-}
-
-article image {
-    align-self: center;
-}
-
-/* === Contenu dynamique avec :target === */
-.content {
-    display: none;
-}
-
-#default {
-    display: block;
-}
-
-:target {
-    display: block;
-}
-
-:target ~ .content {
-    display: none;
-}
 
 /* === Footer === */
 footer {
@@ -134,4 +88,41 @@ footer {
 
 .gpu{
     background: linear-gradient(to bottom, #274c77, #6096ba, #a3cef1);
+    
+}
+
+
+
+.content {
+    display: none;
+    flex: 1;
+    color: #0d1927;
+    font-family: Arial, sans-serif;
+    padding: 4em 3em;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #e7ecef;
+    max-width: 50em;
+    box-sizing: border-box;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 2em;
+}
+
+
+
+/* Afficher uniquement la section ciblée */
+#cpu:target {
+    display: block;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #333333, #76B900);
+}
+
+#gpu:target {
+    display: block;
+    color: #E6E6E6;
+    background: linear-gradient(to bottom, #005591, #0071C5);
+}
+
+#default:target {
+    display: block;
 }
