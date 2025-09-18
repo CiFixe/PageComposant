@@ -57,13 +57,12 @@ aside { /* aside */
 }
 
 aside a { /* Aside a*/
-    margin: 5px 0;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 40px;
     text-decoration: none;
     color: #000;
     background-color: #e7ecef;
     text-align: center;
-    transition: background 0.3s;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -74,13 +73,13 @@ aside a { /* Aside a*/
 /* les contenu sont les différents partie avec les quelles les bouttons 
 peuvent intéragir */
 
-#cpu:target { /* page cpu */
+#gpu:target { /* page cpu */
     display: block;
     color: #ffffff;
     background: linear-gradient(to bottom, #333333, #76B900);
 }
 
-#gpu:target {/* page gpu */
+#cpu:target {/* page gpu */
     display: block;
     color: #E6E6E6;
     background: linear-gradient(to bottom, #005591, #0071C5);
@@ -92,13 +91,9 @@ peuvent intéragir */
 
 .content {/* Contenu */
     display: none;
-    flex: 1;
-    color: #0d1927;
     font-family: Arial, sans-serif;
     padding: 4em 3em;
     border-radius: 16px;
-    box-shadow: 0 4px 16px #e7ecef;
-    max-width: 50em;
     box-sizing: border-box;
     text-align: left;
     margin-right: auto;

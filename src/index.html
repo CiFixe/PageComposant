@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head><!--Head-->
     <meta charset="utf-8">
     <title>Composants d'Ordinateurs</title>
     <link href="styles.css" rel="stylesheet" type="text/css" media="screen"/>
 </head>
 
 <body>
-    <header>
+    <header><!--Header(La partie haute de la page)-->
         <div>
             <img src="../Assets/Images/Logo_Pc.png" alt="Profile" class="Image" width="100" height="100">
             <h1>Composants d'Ordinateurs</h1>
         </div>
     </header>
 
-    <main>
-        <aside>
-            <a href="#cpu">Processeur</a>
-            <a href="#gpu">Carte Graphique</a>
+    <main> <!--Main (La partie ceentrale de la page)-->
+        <aside><!--Les buttons redirigent vers les "section"-->
+            <a href="#cpu">Intel® Core™ i9-14900K</a>
+            <a href="#gpu">NVIDIA GeForce RTX 5090</a>
         </aside>
         
-        <article>
-            <section id="cpu" class="content"> <!-- contenu CPU -->
+        <article> <!--Les section sont les "pages" que les buttons vont afficher-->
+            <section id="gpu" class="content"> <!--Article sur la carte Graphique NVIDIA GeForcee RTX 5090-->
                 <img src="../Assets/Images/CarteGraphique.png" alt="CPU Nvidia" width="90%">
                 <h1>NVIDIA GeForce RTX 5090</h1>
 
@@ -85,7 +85,7 @@
                 </p>
             </section>
         
-            <section id="gpu" class="content"> <!-- contenu GPU -->
+            <section id="cpu" class="content"> <!--Article sur le processeur GeForcee RTX 5090-->
                 <img src="../Assets/Images/Intel_Core.png" alt="CPU Nvidia" width="90%">
                 <h1>Intel® Core™ i9-14900K</h1>
 
@@ -129,7 +129,7 @@
         </article>
     </main>
 
-    <footer>
+    <footer><!--Footer(le bas de la page)-->
         <p>Fait Par : <br> Léo , Mathieu et Gabriel</p>
     </footer>
 </body>
