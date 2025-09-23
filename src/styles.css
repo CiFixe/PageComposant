@@ -89,7 +89,7 @@ peuvent intéragir */
     display: block;
 }
 
-.content {/* Contenu */
+section {/* Contenu */
     display: none;
     font-family: Arial, sans-serif;
     padding: 4em 3em;
