@@ -83,11 +83,15 @@ peuvent intéragir */
     display: block;
     color: #E6E6E6;
     background: linear-gradient(to bottom, #005591, #0071C5);
+
 }
 
-#default:target {/* page defaut */
+#w3c:target {
     display: block;
+    color: #E6E6E6;
+    background: #274c77;
 }
+
 
 section {/* Contenu */
     display: none;
