@@ -86,7 +86,7 @@ peuvent intéragir */
 
 }
 
-#w3c:target {
+#w3c:target {/* page w3c */
     display: block;
     color: #E6E6E6;
     background: #274c77;
